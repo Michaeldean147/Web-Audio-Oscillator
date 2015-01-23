@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="headtrackr.min.js"></script>
+</head>
+
+<body>
+  <button id="C" type="button">C</button>
+  <button id="D" type="button">D</button>
+  <button id="E" type="button">E</button>
+  <button id="F" type="button">F</button>
+  <button id="G" type="button">G</button>
+  <button id="A" type="button">A</button>
+  <button id="B" type="button">B</button>
+  <audio id = "cowbell" src= "sounds/drumkit mp3s/cowbell.mp3"></audio>
+  
+  <canvas id="inputCanvas" width="320" height="240" style="display:none"></canvas>
+  <video id="inputVideo" autoplay loop></video>
+  <script type="text/javascript">
+  var videoInput = document.getElementById('inputVideo');
+  var canvasInput = document.getElementById('inputCanvas');
+
+  var htracker = new headtrackr.Tracker();
+  htracker.init(videoInput, canvasInput);
+  htracker.start();
+
+
+  </script>
+  <script src="audio.js"></script>
+
+</body>
+
+</html>
